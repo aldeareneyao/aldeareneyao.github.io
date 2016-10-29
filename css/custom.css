@@ -3,6 +3,7 @@
 /*Import Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Raleway'); /*  font-family: 'Raleway', Helvetica, sans-serif;  */
 @import url('https://fonts.googleapis.com/css?family=Mate+SC'); /*  font-family: 'Mate SC', Georgia, serif;  */
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700'); /*  font-family: 'Oxygen', Helvetica, sans-serif;  */
 @font-face { font-family: ImpactMobile; src: url('../fonts/impact.ttf'); } /* Impact font for Mobile */
 
 html {
@@ -52,6 +53,10 @@ body {
 	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 1.25em;
 	color: white;
+}
+
+.navbar-inverse .navbar-nav li a:focus{
+	outline: none;
 }
 
 .navbar-inverse .navbar-collapse {
@@ -112,8 +117,81 @@ body {
 }
 
 #about .jumbotron h2{
+	font-family: 'Mate SC', Georgia, serif;
 	margin-top: 0;
+	/*margin-bottom: 25px;*/
+}
+
+#about .jumbotron .web-head {
+	margin-top: 25px !important;
+}
+
+#about .jumbotron p, #about .jumbotron p .badge {
+	font-family: 'Oxygen', Helvetica, sans-serif;
+}
+
+#about .jumbotron p {
+	font-size: 16px;	
+}
+
+#resume .jumbotron ul {
+	font-family: 'Oxygen', Helvetica, sans-serif;
+	font-size: 16px;
+	padding-left: 20px;
+}
+
+#resume .jumbotron h2 {
+	font-family: 'Mate SC', Georgia, serif;
+}
+
+#resume .jumbotron h3, #resume .jumbotron h4{
+	font-family: 'Oxygen', Helvetica, sans-serif;
+}
+
+#resume .jumbotron h2, #resume .jumbotron h3 {
+	margin-top: 0;
+}
+
+#resume .jumbotron p {
+	font-size: 16px;	
+}
+
+#resume .jumbotron p, #resume .jumbotron .resume-sub {
+	font-family: 'Oxygen', Helvetica, sans-serif;
 	margin-bottom: 25px;
+}
+
+#contact {	
+	color: white;
+}
+
+#contact .modal-header h2 {
+	font-family: 'Mate SC', Georgia, serif;
+	font-size: 1.7em;
+	line-height: 1;
+	display: inline;
+}
+
+.contact-modal-header, .contact-modal-body {
+	background-color: #191919;
+}
+
+.contact-modal-header .close{
+	color: white !important;
+	opacity: 1;
+}
+
+.contact-modal-header .close:hover{
+	opacity: .75;
+}
+
+.contact-modal-body {
+	font-family: 'Oxygen', Helvetica, sans-serif;
+}
+
+.contact-modal-body blockquote {
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
 }
 
 .hideme {
