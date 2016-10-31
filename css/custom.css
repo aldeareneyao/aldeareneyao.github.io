@@ -143,13 +143,56 @@ body {
 	margin-top: 60px;
 }
 
-#portfolio .top-heading {
-	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	top: -15px;
-	border: 1px solid white;
+#portfolio h2 {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-family: 'Mate SC', Georgia, serif;
+}
+
+#portfolio h5, #portfolio h4 {
+	margin-top: 0;
+	font-family: 'Oxygen', Helvetica, sans-serif;
+}
+
+@media (max-width: 992px) {
+	#portfolio a h4 {
+		text-align: center;
+	}
+}
+
+#portfolio hr {
+	margin-top: 0px;
+}
+
+#portfolio .carousel .carousel-inner .item {
+	max-width: 100%;
+}
+
+#portfolio .carousel .carousel-control {
+	background: none;
+}
+
+#portfolio .carousel .carousel-control span {
+	opacity: 0.4;
+}
+
+#portfolio a,
+#portfolio a:link,
+#portfolio a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#portfolio a:hover {
+	color: dimgray;
+}
+
+#portfolio #schoolORC {
+	margin-bottom: 20px;
+}
+
+#portfolio .orc-section h5 {
+	line-height: 1.6;
 }
 
 #resume .resume-pdf {

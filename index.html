@@ -123,8 +123,30 @@
 				
 				<div class="col-xs-12 jumbotron">
 
-					<div class="top-heading">My Works</div>
-					<p>Para</p>
+					<div class="row">
+						<h2 class="col-xs-12">My Works</h2>
+					</div>
+
+					<hr>
+
+					<div class="row">						
+						<div class="carousel slide col-md-5" data-ride="carousel" id="schoolORC">
+							<div class="carousel-inner">
+								<img src="img/orcglgmnhs.png" class="active item img-rounded">
+								<img src="img/orcglgmnhs_2.png" class="item  img-rounded">
+								<img src="img/orcglgmnhs_3.png" class="item  img-rounded">
+								<img src="img/orcglgmnhs_4.png" class="item  img-rounded">
+								<img src="img/orcglgmnhs_5.png" class="item  img-rounded">
+							</div>
+							<a href="#schoolORC" role="button" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+							<a href="#schoolORC" role="button" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></></a>
+						</div>
+
+						<div class="col-md-7 orc-section">							
+							<a href="http://orcglgmnhs.000webhostapp.com" target="_blank"><h4 data-toggle="tooltip" data-placement="top" title="Click to visit.">Online School Report Card</h4></a>
+							<h5>(Fin. 09/2015) In collaboration with <a href="https://www.facebook.com/maronski" target="_blank" data-toggle="tooltip" data-placement="top" title="Click to visit his facebook page.">Mr. Maron Balinas</a>, we had a client of college students who requested a web application in the form of an online report card in which the core functionality is that teachers can input grades to their corresponding students, while students can view the grades online. You can visit the site where a demo version of the web application is hosted by clicking on the header title above. For a teacher account, you can use <kbd>USERNAME: visitor</kbd> and <kbd>PASSWORD: password</kbd>. For a demo student account, <kbd>USERNAME: student_demo</kbd> and <kbd>PASSWORD: password</kbd>. You can test all the available functions of the demo web app. Play and experiment with it. For any kind of questions, comments or suggestions, check my contacts above and send me a text, chat or e-mail.</h5>
+						</div>
+					</div>
 					
 				</div>
 
@@ -137,8 +159,8 @@
 			<div class="row">
 							
 				<div class="row">
-					<div class="col-sm-offset-5 col-sm-2">
-						<a href="Rene%20Y.%20Aldea%20Resume%20v3.pdf" class="btn btn-default center-block resume-pdf" role="button">Download Resume</a>
+					<div class="col-xs-offset-3 col-xs-6 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4">
+						<a href="Rene%20Y.%20Aldea%20Resume%20v3.pdf" target="_blank" class="btn btn-default center-block resume-pdf" role="button">Download Resume</a>
 					</div>
 				</div>	
 				
@@ -240,7 +262,7 @@
 							<div class="col-xs-9">
 								<h4 class="text-left">(02)213-8051</h4>
 								<h4 class="text-left">+639153723712</h4>
-								<a href="https://www.facebook.com/KiMiHiR0" class="contact-a-fb"><h4>facebook.com/KiMiHiR0</h4></a>
+								<a href="https://www.facebook.com/KiMiHiR0" target="_blank" class="contact-a-fb"><h4>facebook.com/KiMiHiR0</h4></a>
 								<a href="mailto:aldeareneyao@gmail.com?Subject=Hello!%20I%20visited%20your%20website!" class="contact-a-gmail"><h4>aldeareneyao@gmail.com</h4></a>
 							</div>
 						</div>
@@ -265,7 +287,7 @@
 			<ul class="nav navbar-nav container">									
 					<p class="col-lg-6 col-md-12 text-left">&#64; 2016 Rene Yao Aldea. All rights reserved. Web Designer &amp; Developer</p>
 					<p class="col-lg-6 col-md-12 text-right">
-						<a href="https://facebook.com/KiMiHiR0" class="a-fb"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+						<a href="https://facebook.com/KiMiHiR0" target="_blank" class="a-fb"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
 						&nbsp;&nbsp;
 						<a href="mailto:aldeareneyao@gmail.com?Subject=Hello!%20I%20visited%20your%20website!" target="_top" class="a-gmail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
 					</p>				
@@ -283,6 +305,10 @@
 			
 			$(".show-age").click(function(){
 				$(this).text(ageNow-1992);
+			});
+			
+			$('.carousel').carousel({
+				interval: 2500
 			});
 		
 			$('[data-toggle="tooltip"]').tooltip();
