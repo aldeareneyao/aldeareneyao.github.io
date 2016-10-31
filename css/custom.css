@@ -55,6 +55,10 @@ body {
 	color: white;
 }
 
+.navbar-inverse .navbar-nav li a:hover{
+	cursor: pointer;
+}
+
 .navbar-inverse .navbar-nav li a:focus{
 	outline: none;
 }
