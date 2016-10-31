@@ -111,7 +111,7 @@ body {
 	margin-top: 60px;
 }
 
-#about .jumbotron, #resume .jumbotron {
+#about .jumbotron, #portfolio .jumbotron, #resume .jumbotron {
 	background-color: rgba(0, 0, 0, .75);
 	color: white;
 }
@@ -132,6 +132,36 @@ body {
 
 #about .jumbotron p {
 	font-size: 16px;	
+}
+
+#portfolio {
+	position: relative;
+	margin-top: 60px;
+}
+
+#portfolio .top-heading {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: -15px;
+	border: 1px solid white;
+}
+
+#resume .resume-pdf {
+	font-family: 'Oxygen', Helvetica, sans-serif;
+	border: 1px solid white;
+	background-color: black;
+	color: white;
+	margin-bottom: 15px;
+}
+
+#resume .resume-pdf:hover {
+	font-family: 'Oxygen', Helvetica, sans-serif;
+	border: 1px solid black;
+	background-color: white;
+	color: black;
+	margin-bottom: 15px;
 }
 
 #resume .jumbotron ul {
@@ -194,6 +224,32 @@ body {
 	border-bottom-left-radius: 2px;
 }
 
+#contact a:link, #contact a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#contact .contact-a-gmail:hover {
+	color: firebrick;
+}
+
+#contact .contact-a-fb:hover {
+	color: cornflowerblue;
+}
+
+#contact h4 {
+	margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 345px) {
+	#contact h4 {
+		font-size: 12px;
+		margin-top: 50px;
+   		margin-bottom: 60px;
+	}
+}
+
 .hideme {
 	display: none !important;
 }
@@ -221,8 +277,12 @@ body {
 	color: white;
 }
 
-.footer a:hover {
+.footer .a-gmail:hover {
 	color: firebrick;
+}
+
+.footer .a-fb:hover {
+	color: cornflowerblue;
 }
 
 @media (max-width: 1200px) {
