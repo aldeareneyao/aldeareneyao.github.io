@@ -10,11 +10,13 @@ html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	overflow-y: scroll !important;	
 }
 
 .navbar-inverse {
 	background: rgba(255, 255, 255, .1);
 	border: 0px;
+	border-radius: 0;
 }
 
 body {
@@ -354,4 +356,31 @@ body {
    	.footer p {
    		font-size: .75em;
     }
+}
+
+.modal-open {
+	padding-right: 0 !important;
+}
+
+/* CUSTOM SCROLLBAR */
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 10px;
+} 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: none;
+    border-radius: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: none;
+    border-radius: none;
+    background: rgba(0,0,0,0.2); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0.2); 
 }
