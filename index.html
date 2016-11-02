@@ -296,6 +296,7 @@
     <script type="text/javascript">
     	$("document").ready(function(){
 			var targetAttrib;
+			var windowWidth;
 			var ageNow = new Date().getFullYear();
 			
 			$(".show-age").click(function(){
@@ -309,7 +310,13 @@
 			$('[data-toggle="tooltip"]').tooltip();
 			
 			$(".navbar-nav li a").click(function(){
-				targetAttrib = $(this).attr('target');
+				targetAttrib = $(this).attr('target');				
+				windowWidth = $(window).width();
+				
+				if (windowWidth < 768) {
+					$('.collapse').collapse('toggle');					
+				}
+				
 				/*document.write("Attrib is: ", targetAttrib);*/
 				if (targetAttrib != "#contact") {
 					$(targetAttrib).fadeIn(1000).addClass("showcontent").removeClass("hideme");
@@ -323,7 +330,7 @@
 			$(window).resize(function(){
 				centerHeight = ($(window).height() / 2) - 100;	
 				$('#home').css("margin-top", centerHeight);
-			}); */   
+			});  */  
 		});
     </script>
 </body>
